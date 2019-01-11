@@ -21,3 +21,6 @@
     
 5. Hverjir er helstu kostir við GIT?
     Að geta haldið utan um öll verkefnin þín yfir mörgum tölvum með léttu.
+
+6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
+    Fyrir hvert push.
