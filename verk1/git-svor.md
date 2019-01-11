@@ -15,3 +15,6 @@
     git log - lists version history for the current branch
     git checkout - switches to a specified branch and updates the current directory
     git branch - creates a new branch
+
+4. Hvað er útgáfustýring (version control)?
+    Útgáfustýring gerir það mögulegt að geyma allar gömlu gerðir af gögnunum þínum.
