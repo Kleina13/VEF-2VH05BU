@@ -18,3 +18,6 @@
 
 4. Hvað er útgáfustýring (version control)?
     Útgáfustýring gerir það mögulegt að geyma allar gömlu gerðir af gögnunum þínum.
+    
+5. Hverjir er helstu kostir við GIT?
+    Að geta haldið utan um öll verkefnin þín yfir mörgum tölvum með léttu.
