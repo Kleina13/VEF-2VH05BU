@@ -24,3 +24,7 @@
 
 6. Hversu oft telur þú að eigi að gera færslur (commit) í verkefni?
     Fyrir hvert push.
+
+7. Hvað er átt við með “Working Directory”?” og “Staging Area” í GIT?
+    Working directory er sú gerð af verkefninu sem þú ert að vinna í núna.
+    Staging area er...
