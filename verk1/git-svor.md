@@ -3,7 +3,7 @@ layout: default
 title: Gitsvör
 ---
 # Git Verkefni 1
-
+        
 1. Hvað gera eftirfarandi Linux skipanir?
     * cd - chance directory
     * ls - list items
