@@ -1,0 +1,8 @@
+- name: Forsíða
+  link: /
+
+- name: Git svör
+  link: /verk1/git-svor.html
+
+- name: Ummig
+  link: /assets/about.html
