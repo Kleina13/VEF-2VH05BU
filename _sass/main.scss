@@ -1,6 +1,7 @@
 .current {
   color: orange;
 }
+$body-bg: transparent;
 @import url('https://fonts.googleapis.com/css?family=Roboto|Questrial');
 * {
   box-sizing: border-box;
@@ -47,7 +48,7 @@ blockquote {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/trianglify1.svg)
+  background-image: url(../1onn/Verkefni-5/img/trianglify1.svg)
 }
 .maintext {
   padding-top: 30px;
@@ -84,9 +85,8 @@ header {
 }
 h1 {
 	font-weight: normal;
-    margin-top: 0;
-    font-family: 'Questrial', sans-serif;
-    color: #F0F0F0;
+  margin-top: 0;
+  font-family: 'Questrial', sans-serif;
 }
 p {
     padding: 15px;
