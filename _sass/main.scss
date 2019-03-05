@@ -1,7 +1,14 @@
-.current {
-  color: orange;
+$colors: (
+    main: #FF2A19,
+    sec: #7F150C,
+    third: #dc2b1b,
+    fourth: #B6160C
+);
+@function color($color-name) {
+    @return map-get($colors, $color-name)
 }
 $body-bg: transparent;
+$assetPath: "../assets/images";
 @import url('https://fonts.googleapis.com/css?family=Roboto|Questrial');
 * {
   box-sizing: border-box;
@@ -12,15 +19,25 @@ ul {
 html {
   scroll-behavior: smooth;
 }
+body, html {
+    height: 100%;
+}
 body {
   width: 100%;
   margin-top: 60px;
-  background-color: #FF2A19;
+  background-color: color(main);
   font-family: sans-serif;
+  background: url("#{$assetPath}/trianglify.svg") repeat-x fixed 0 0;
+
+  #white {
+    background-color: #F0F0F0;
+    width: 100%;
+    padding: 7px
+  }
 }
 main {
   display: grid;
-	grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
   "hver"
   "feril"
@@ -29,22 +46,22 @@ main {
   margin: auto;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
   height: auto;
   overflow: auto;
 }
 hr {
-  color: #FF2A19;
+  color: color(main);
   height: 1px;
   border: 0px;
-  border-top: 1px solid #FF2A19;
+  border-top: 1px solid color(main);
   margin: 2em 4% 0em 4%;
   padding: 0; 
 }
 blockquote {
   padding: 8px;
-  border: #7F150C solid 5px;
-  background-color: #FF2A19;
+  border: color(sec) solid 5px;
+  background-color: color(main);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,13 +118,13 @@ p {
     width: 600px;
 }
 .navbar {
-    background-color: #dc2b1b;
+    background-color: color(third);
     color:white;
     text-align: center;
     position: fixed; 
     top: 0; 
     width: 100%;
-    border-top: #B6160C solid 4px;
+    border-top: color(fourth) solid 4px;
     box-shadow: 0px 3px 50px black;
     z-index:999999;
 }
@@ -118,7 +135,7 @@ p {
     margin: auto;
 }
 .undernav{
-    background-color: #dc2b1b;
+    background-color: color(third);
     color:white;
     text-align: center;
     margin: auto;
@@ -134,7 +151,7 @@ p {
     text-decoration: none;
 }
 .undernav a:hover{
-    background-color: #B6160C; 
+    background-color: color(fourth); 
 }
 .navbar a{
     display: block;
@@ -164,7 +181,7 @@ p {
   right: 0;
   bottom: -30px;
   border-radius: 20px;
-  background: #B6160C;
+  background: color(fourth);
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -184,7 +201,7 @@ p {
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  background: #B6160C;
+  background: color(fourth);
 }
 #hver {
     grid-area: hver;
@@ -217,7 +234,7 @@ article {
     margin-bottom: 5%;
     border: rgba(0,0,0,0.1) solid 7px;
     border-radius: 20px;
-    background-color: #FF2A19;
+    background-color: color(main);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -264,12 +281,10 @@ blockquote h2{
     grid-area: samband;
 }
 #bluefade {
-    background: #FF2A19;
-    background: linear-gradient(0deg, #FF2A19 5%, white 100%);
+    background: color(main);
+    background: linear-gradient(0deg, color(main) 5%, white 100%);
 }
-#white {
-    background-color: #F0F0F0;
-}
+
 #bluebackground {
     background-image: url(../assets/images/trianglify.svg);
     background-size: cover;
